@@ -12,8 +12,8 @@ const team = document.getElementById('team');
 
 // Creo un array di oggetti
 const ourTeam = [
-    { fullName: 'Wayne Barnett', role: 'Founder & CEO', image: 'wayne-barnett-founder-ceo.jng' },
-    { fullName: 'Angela Caroll', role: 'Chief Editor', image: 'angela-caroll-chief-editor.jng' },
+    { fullName: 'Wayne Barnett', role: 'Founder & CEO', image: 'wayne-barnett-founder-ceo.jpg' },
+    { fullName: 'Angela Caroll', role: 'Chief Editor', image: 'angela-caroll-chief-editor.jpg' },
     { fullName: 'Walter Gordon', role: 'Office Manager', image: 'walter-gordon-office-manager.jpg' },
     { fullName: 'Angela Lopez', role: 'Social Media Manager', image: 'angela-lopez-social-media-manager.jpg' },
     { fullName: 'Scott Estrada', role: 'Developer', image: 'scott-estrada-developer.jpg' },
@@ -42,9 +42,9 @@ for (let i = 0; i < ourTeam.length; i++) {
 
     members += `
     <li>
-     <h4> Immagine: ${imageMember}</h4>
-     <h3> Nome: ${fullNameMember}</h3>
-     <h4> Ruolo: ${roleMember}</h4>
+     <img src="img/${imageMember}">
+     <h3>${fullNameMember}</h3>
+     <h4>${roleMember}</h4>
      </li> `;
 }
 
