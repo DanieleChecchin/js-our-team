@@ -7,6 +7,9 @@ MILESTONE 2:
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
 
+// Recupero gli elementi dal DOM
+const team = document.getElementById('team');
+
 // Creo un array di oggetti
 const ourTeam = [
     { fullName: 'Wayne Barnett', role: 'Founder & CEO', image: 'wayne-barnett-founder-ceo.png' },
@@ -17,10 +20,38 @@ const ourTeam = [
     { fullName: 'Barbara Ramos', role: 'Graphic Designer', image: 'barbara-ramos-graphic-designer.jpg' }
 ]
 
+let fullNameMember = '';
+let roleMember = '';
+let imageMember = '';
+let members = '';
+
+
+
 for (let i = 0; i < ourTeam.length; i++) {
     const member = ourTeam[i];
     console.log(member['fullName'], member['role'], member['image']);
+
+    fullNameMember = member['fullName'];
+    console.log(fullNameMember)
+
+    roleMember = member['role'];
+    console.log(roleMember)
+
+    imageMember = member['image'];
+    console.log(imageMember)
+
+    members += `
+    <li>
+     <h3> Nome del membro: ${fullNameMember}</h3>
+     <h4> Ruolo nell'azienda: ${roleMember}</h4>
+     <h4> Immagine: ${imageMember}</h4>
+     </li> `;
 }
+
+team.innerHTML = members;
+
+
+
 /*
 for (let member of ourTeam) {
     console.log(member.fullName, member.role, member.image);
