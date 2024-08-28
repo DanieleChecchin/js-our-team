@@ -1,0 +1,35 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utils */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3,
+h4 {
+    font-family: cursive;
+}
+
+ul {
+    margin-top: 50px;
+}
+
+li {
+    margin: 20px 0;
+}
