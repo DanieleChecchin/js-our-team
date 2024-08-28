@@ -3,7 +3,7 @@ MILESTONE 0: -V-
 Creare l’array di oggetti con le informazioni fornite.
 MILESTONE 1: -V-
 Stampare su console le informazioni di nome, ruolo e la stringa della foto
-MILESTONE 2:
+MILESTONE 2: -V-
 Stampare le stesse informazioni su DOM sottoforma di stringhe
 */
 
@@ -42,9 +42,9 @@ for (let i = 0; i < ourTeam.length; i++) {
 
     members += `
     <li>
+     <h4> Immagine: ${imageMember}</h4>
      <h3> Nome: ${fullNameMember}</h3>
      <h4> Ruolo: ${roleMember}</h4>
-     <h4> Immagine: ${imageMember}</h4>
      </li> `;
 }
 

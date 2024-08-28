@@ -27,9 +27,13 @@ h4 {
 }
 
 ul {
-    margin-top: 50px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 li {
-    margin: 20px 0;
+    flex-basis: calc((100% / 3) - (40px / 3));
+    padding-bottom: 50px;
 }
